@@ -61,7 +61,7 @@ class Block(nn.Module):
 
 class GPTMu(nn.Module):
     """arm in {"GPTU", "GPTQ", "GPTFM"}. Tied embeddings; ctx = config.SEQ.
-    GPTFM is the compute-matched transformer (prereg §2)."""
+    GPTFM is the compute-matched transformer."""
 
     def __init__(self, arm: str):
         super().__init__()
@@ -128,10 +128,10 @@ class LSTMMu(nn.Module):
 
 
 class LSTM12(LSTMMu):
-    """Unroll-depth control (prereg §2): identical LSTM-µ body, each token's
+    """Unroll-depth control: identical LSTM-µ body, each token's
     embedding presented for 12 consecutive micro-steps, readout at the 12th.
     Matches T2/R2 in params, serial depth, and training compute at once — the
-    deflation control for 'a recurrent SNN beats an LSTM' (prereg S2)."""
+    deflation control for 'a recurrent SNN beats an LSTM' (secondary S2)."""
 
     def __init__(self):
         super().__init__(arm="LSTM12")

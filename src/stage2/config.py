@@ -28,26 +28,26 @@ LP_ALPHA = 0.8          # low-pass filter for readout spike counts
 # dense arms
 GPT_LAYERS, GPT_HEADS, GPT_D = 6, 5, 160
 LSTM_LAYERS, LSTM_H = 2, 384
-# GPT-FM: compute-matched transformer (prereg §2: rho = 21.95M/2.345M = 9.36;
+# GPT-FM: compute-matched transformer (rho = 21.95M/2.345M = 9.36;
 # 8L x 7H x d448 -> 21.13M MACs/token = 0.96*rho, within the +/-10% band)
 GPTFM_LAYERS, GPTFM_HEADS, GPTFM_D = 8, 7, 448
 LSTM12_MICRO = 12       # unroll-depth control: micro-steps per token
 
-# protocol (prereg §3, §9)
+# protocol
 CKPT_EVERY = 500        # mid-run crash checkpoints (operational)
-GRID = (600, 1200, 2400, 3600, 4800, 6000)  # registered eval checkpoints
+GRID = (600, 1200, 2400, 3600, 4800, 6000)  # evaluation checkpoints
 
-# optimization (frozen for gates; phase0_spec.md). LR_DENSE/LR_SPIKE,
-# GPT_DROPOUT and SURROGATE_SLOPE are the tuning-grid axes (prereg §2.1);
+# optimization (frozen for gates). LR_DENSE/LR_SPIKE,
+# GPT_DROPOUT and SURROGATE_SLOPE are the tuning-grid axes;
 # tune.py overrides them per grid point, protocol runs take the winners.
 LR_DENSE = 1e-3
 LR_SPIKE = 2e-3
 GPT_DROPOUT = 0.0
 
-# Tuning-grid winners (prereg §2.1, pinned 2026-08-09 as Amendment A1 from
+# Tuning-grid winners (pinned 2026-08-09, before any protocol run, from
 # runs/tuneG and runs/tuneT2; seed 99, full grids published). ONLY the arms
 # named here take winners — controls inherit the gate recipes above, and
-# GPTFM inherits GPTU's winner, all per prereg §2.
+# GPTFM inherits GPTU's winner, per the analysis plan.
 ARM_OVERRIDES = {
     "GPTU": {"lr": 2e-3, "dropout": 0.0},
     "GPTFM": {"lr": 2e-3, "dropout": 0.0},

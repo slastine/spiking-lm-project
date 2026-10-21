@@ -27,7 +27,7 @@ class _SpikeFn(torch.autograd.Function):
     def backward(ctx, g):
         (v,) = ctx.saved_tensors
         # fast-sigmoid surrogate (SuperSpike); slope is per-model so tuning
-        # winners apply to T2 without silently retuning R2 (prereg §2)
+        # winners apply to T2 without silently retuning R2
         return g / (1.0 + ctx.slope * v.abs()) ** 2, None
 
 

@@ -14,7 +14,7 @@ FULL_ARMS = ["T2", "R2", "GPTU", "GPTQ", "LSTMU"]
 
 
 def test_full_size_params_matched():
-    """phase0_spec: all arms 1.90-1.92M, matched +/-10%."""
+    """All arms 1.90-1.92M, matched +/-10%."""
     counts = {a: sum(p.numel() for p in build(a).parameters()) for a in FULL_ARMS}
     lo, hi = min(counts.values()), max(counts.values())
     assert hi / lo < 1.10, f"param mismatch beyond 10%: {counts}"

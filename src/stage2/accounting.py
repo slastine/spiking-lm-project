@@ -49,7 +49,7 @@ def _fanouts(model):
 
 
 def _dense_macs_per_token(H):
-    """Charged per phase0_spec: the recurrent tick is not free.
+    """Charged in full: the recurrent tick is not free.
     leak/reset for v1, v2 AND the lp2 low-pass (3 per-neuron mults/step),
     readout 2H*V, encoder ~D_EMB."""
     return 3 * H * config.W + 2 * H * config.V + config.D_EMB
@@ -169,13 +169,13 @@ def lstm12_macs_per_token():
 
 
 def gptfm_macs_per_token(ctx):
-    """Compute-matched transformer (prereg §2), same pure-MAC convention."""
+    """Compute-matched transformer, same pure-MAC convention."""
     d, L, V = config.GPTFM_D, config.GPTFM_LAYERS, config.V
     return L * 12 * d * d + L * 2 * d * ctx + d * V
 
 
 def t2_training_macs_per_token():
-    """T2's dense-training charge (prereg §2 rho convention: surrogate BPTT
+    """T2's dense-training charge (rho convention: surrogate BPTT
     gets no sparsity credit — input, recurrent, ff, readout, leak all dense)."""
     H, C, W, V = config.N_HID, config.D_EMB, config.W, config.V
     per_step = (C + 1) * H + H * H * 3 + 3 * H      # in + rec1/ff/rec2 + leaks

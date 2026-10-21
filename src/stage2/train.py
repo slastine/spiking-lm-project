@@ -75,7 +75,7 @@ def eval_bpc(model, eval_ids, device, max_windows=None, counter=None):
         n_win = min(n_win, max_windows)
     tot_nll, tot_n = 0.0, 0
     hit_next, hit_curr = 0, 0
-    # position buckets (prereg §1): token positions 1-32 / 33-128 / 129-256
+    # position buckets: token positions 1-32 / 33-128 / 129-256
     # within eval windows, identical for every arm (state reset per window)
     bounds = (min(32, S), min(128, S), S)
     b_nll = [0.0, 0.0, 0.0]
@@ -134,10 +134,10 @@ def train_run(model, steps, next_batch, device, label, eval_fn=None,
     dict merged into history. Returns result dict (never raises on death —
     a death is a recorded outcome, not a crash).
 
-    Protocol additions (prereg §3, ops review M1): atomic {model, opt, step}
+    Protocol additions (ops review M1): atomic {model, opt, step}
     checkpoint to ckpt_path every CKPT_EVERY steps; resume from a loaded ckpt
-    dict; model-state saves at registered grid steps into grid_dir (the LOCF
-    basis for §7 and the C3 interpolation grid). Callers doing resume must
+    dict; model-state saves at evaluation-grid steps into grid_dir (the LOCF
+    basis for failed-run scoring and the C3 interpolation grid). Callers doing resume must
     fast-forward the batcher themselves (exact: skip step*1 batches) and pass
     skip_batches for the record."""
     import os

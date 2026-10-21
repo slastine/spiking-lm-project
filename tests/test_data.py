@@ -1,5 +1,5 @@
 """Data pinning and batching. The known-bad demonstrations are not decoration:
-a verification that has only ever passed is not evidence (stage1 CLAUDE.md)."""
+a verification that has only ever passed is not evidence."""
 import hashlib
 import pathlib
 

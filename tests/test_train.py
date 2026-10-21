@@ -62,7 +62,7 @@ def test_eval_bpc_uniform_model_is_log2v(tiny):
 
 
 def test_eval_windows_do_not_overlap(tiny):
-    """The eval definition is frozen (phase0_spec): non-overlapping windows,
+    """The eval definition is frozen: non-overlapping windows,
     every position scored once. n_chars must equal n_win * SEQ exactly."""
     m = build("LSTMU")
     S = config.SEQ
@@ -91,7 +91,7 @@ def test_echo_diagnostic_fires_on_copy_model(tiny):
 
 def test_seed_parity_across_arms(tiny, corpus_ids):
     """Two arms constructed with the same data seed must see identical batches
-    (the cross-arm pairing claim in phase0_spec is a code property, not hope)."""
+    (the cross-arm pairing claim is a code property, not hope)."""
     b1 = data.OrderedBatcher(corpus_ids, config.SEQ, config.BATCH, seed=2)
     b2 = data.OrderedBatcher(corpus_ids, config.SEQ, config.BATCH, seed=2)
     for _ in range(3):

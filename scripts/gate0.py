@@ -103,7 +103,7 @@ def main():
                 bpc = corpus_bpc(m, x_all, y_all)
                 # early stop on pass: the criterion is "<0.5 within 5,000
                 # steps" — training past the crossing is pure spend with no
-                # evidentiary value (live-run amendment, 2026-08-08)
+                # evidentiary value (live-run change, 2026-08-08)
                 return {"corpus_bpc": bpc, "_stop": bpc < config.GATE0_PASS_BPC}
 
             res = train_run(model, STEPS, next_batch, DEV, f"g0_{arm}",

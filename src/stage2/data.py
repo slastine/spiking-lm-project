@@ -106,7 +106,7 @@ class OrderedBatcher:
 
 
 def gate0_corpus(train_ids: np.ndarray):
-    """Fixed 100x65 memorization corpus, deterministic (phase0_spec)."""
+    """Fixed 100x65 memorization corpus, deterministic."""
     rng = np.random.default_rng(np.random.SeedSequence([20260808, 999]))
     starts = rng.choice(len(train_ids) - config.GATE0_SEQ_LEN,
                         size=config.GATE0_SEQS, replace=False)

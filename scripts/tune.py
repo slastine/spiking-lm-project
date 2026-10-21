@@ -1,7 +1,7 @@
-"""Tuning-parity grids (prereg §2.1), frozen here. Env: ARMS in {GPTU, T2}
+"""Tuning-parity grids, frozen here. Env: ARMS in {GPTU, T2}
 (one per invocation or space-sep), LABEL, OUT. Seed 99, 1,200 steps each
 point, scored on capped val; full grid published; winner is advisory — the
-protocol launch pins it as a config amendment.
+protocol launch pins it in config.ARM_OVERRIDES.
 """
 import json
 import os
@@ -22,7 +22,7 @@ LABEL = os.environ.get("LABEL", "tune")
 ARMS = os.environ.get("ARMS", "GPTU T2").split()
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
 STEPS = 1200
-SEED = 99                    # excluded from all analysis (prereg §2.1)
+SEED = 99                    # excluded from all analysis
 
 GRIDS = {
     "GPTU": [{"LR_DENSE": lr, "GPT_DROPOUT": dr}

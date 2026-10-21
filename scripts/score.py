@@ -1,14 +1,14 @@
-"""Protocol scoring per prereg v1.0 §4-§8 + Amendment A2.
+"""Protocol scoring per the fixed analysis plan (v1.1).
 
 v1.0 FROZEN 2026-08-09 evening, before the final spiking seeds landed.
-v1.1 (Amendment A2, same evening, still pre-data): fixes from the independent
+v1.1 (same evening, before any scoring): fixes from the independent
 statistics audit, all direction-neutral, none changing the partial preview:
  - CI-vs-U disagreement override applies to EVERY region (was: behind only)
  - horizon-censoring evaluates the TRAILING arm's slope (was: always T2)
  - MW permutation p = (cnt+1)/(n_perm+1)  (was: cnt/n, could ship p=0)
  - BCa z0 mid-p tie handling + BCa-vs-percentile region disagreement flag
  - Holm family restructured to m=4 real tests (S2,S3,S4,S6); S1 and S5 are
-   registered CRITERIA reported outside Holm (their degenerate 0/1 pseudo-p
+   pass/fail CRITERIA reported outside Holm (their degenerate 0/1 pseudo-p
    values would void the FWER guarantee and distort the real tests)
  - added: Hodges-Lehmann shift, ITT/per-protocol sensitivities + fragile
    check, death rate, percentile CIs for 5-seed comparisons, CI on the C3
@@ -224,8 +224,8 @@ def main():
                          "rate": len(deaths) / max(1, len(runs))}
         out["P1_sensitivities"] = {"identical_to_primary": not deaths,
                                    "fragile": False if not deaths else None}
-    # Secondaries. Amendment A2: Holm family is the m=4 REAL tests
-    # (S2,S3,S4,S6); S1 and S5 are registered pass/fail CRITERIA reported
+    # Secondaries. v1.1: Holm family is the m=4 REAL tests
+    # (S2,S3,S4,S6); S1 and S5 are pass/fail CRITERIA reported
     # outside Holm (audit M2: degenerate pseudo-p values void the FWER
     # guarantee and distort the real tests' multipliers).
     pv, notes, criteria = {}, {}, {}
@@ -264,9 +264,9 @@ def main():
                      if k >= n / 2 else range(0, k + 1))) / 2 ** n * 2
         pv["S6_bucket_sign"] = min(1.0, p_sign)
         notes["S6"] = f"{k}/{n} seeds: T2 gap WIDENS with depth"
-    # S5/C3: registered CRITERION (R >= 2.0 with CI excluding 1.0), gated on
-    # S1. Deviation from §8's grid interpolation is disclosed (audit C3):
-    # ops are final-checkpoint measurements; this equals the registered
+    # S5/C3: planned CRITERION (R >= 2.0 with CI excluding 1.0), gated on
+    # S1. Deviation from the planned grid interpolation (audit C3):
+    # ops are final-checkpoint measurements; this equals the planned
     # statistic here only because B* is the trailing arm's own final quality
     # and GPT-µ's per-token cost is step-constant. T2's per-token cost is
     # NOT step-constant (sparsity drift measured 252k->305k); drift bound

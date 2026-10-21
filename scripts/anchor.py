@@ -1,4 +1,4 @@
-"""Reference-anchor run (prereg §2.2): our GPT harness at the published
+"""Reference-anchor run: our GPT harness at the published
 nanoGPT shakespeare_char configuration (6L x 6H x d384, dropout 0.2, ctx 256,
 ~10.6M params, batch 64, 5000 iters) on tiny-shakespeare. Must land within
 0.10 BPC of the published 1.4697 nats = 2.121 BPC or the protocol is blocked

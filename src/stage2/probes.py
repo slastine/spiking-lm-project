@@ -1,8 +1,8 @@
-"""Registered probes (prereg §6): generation policy and the induction probe.
+"""Fixed probes: generation policy and the induction probe.
 
 Both are frozen here so their stimulus sets and scoring are committed before
 any protocol run launches (the freeze-or-demote rule). The induction probe is
-registered as an EXPECTED T2 LOSS and publishes either way.
+planned as an EXPECTED T2 LOSS and publishes either way.
 """
 import hashlib
 
@@ -16,7 +16,7 @@ from .train import is_recurrent
 
 @torch.no_grad()
 def generate(model, prompt_ids, n_chars, device, temperature=1.0, gen_seed=0):
-    """Ancestral sampling, temperature 1.0 (prereg §6). One sequence.
+    """Ancestral sampling, temperature 1.0. One sequence.
     Sampling RNG is a dedicated generator so generation never perturbs any
     other random stream."""
     model.eval()
@@ -58,7 +58,7 @@ def novelty_8gram(gen_ids, train_ids) -> dict:
 
 def make_induction_probes(val_ids, n_per_dist=300):
     """6-char strings repeated at distances {64, 128, 192} inside 256-char
-    windows of real val text (generator seed 20260808; prereg §6). Returns
+    windows of real val text (generator seed 20260808). Returns
     (windows [N,256] int64, second-occurrence score positions [N,5], sha256)."""
     rng = np.random.default_rng(np.random.SeedSequence([20260808, 7]))
     xs, spans = [], []

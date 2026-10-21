@@ -1,4 +1,4 @@
-"""Protocol pod entry (prereg v1.0). Env: ARMS, SEEDS, STEPS (default 6000),
+"""Protocol pod entry. Env: ARMS, SEEDS, STEPS (default 6000),
 LABEL, DEADLINE_S, OUT. Idempotent and resumable:
 - a tag with a complete results file is never re-run (container restarts safe)
 - mid-run ckpt every CKPT_EVERY steps -> ckpt dir (network volume if mounted
@@ -6,9 +6,9 @@ LABEL, DEADLINE_S, OUT. Idempotent and resumable:
   batcher exactly
 - state_dict saved IMMEDIATELY post-train, BEFORE final eval/accounting
   (ops review M2: the epilogue must never be able to destroy trained weights)
-- registered grid evals with state saves (prereg §3)
+- evaluation-grid evals with state saves (config.GRID)
 - test span [10.0M,10.5M) touched exactly once, at the final checkpoint,
-  results sealed into the row (prereg §1, §4)
+  results sealed into the row
 """
 import json
 import math
@@ -116,7 +116,7 @@ def main():
                              "resumed_from")})
                 if not res["death"]:
                     row["final_val"] = eval_bpc(model, val_ids, DEV)
-                    # single registered test-span touch (prereg §1/§4)
+                    # the single test-span touch
                     row["final_test"] = eval_bpc(model, data.span(ids, "test"),
                                                  DEV)
                     if arm in ("T2", "R2"):

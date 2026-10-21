@@ -3,7 +3,7 @@
 The pod re-downloads the identical byte range and every constant here is verified
 against it before a single training step runs. A mismatch is a hard failure, not a
 warning -- silently different data is the class of bug this file exists to make
-impossible (stage1 CLAUDE.md: checks must fail on known-bad).
+impossible (checks must fail on a known-bad case).
 """
 HF_REVISION = "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64"
 HF_URL = ("https://huggingface.co/datasets/roneneldan/TinyStories/resolve/"

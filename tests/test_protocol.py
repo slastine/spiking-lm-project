@@ -52,7 +52,7 @@ def test_lstm12_chunk_equivalence(tiny):
 
 
 def test_gptfm_size_and_compute_match():
-    """Prereg §2: GPT-FM ≈19.4M params, MACs within ±10% of rho x GPT-µ."""
+    """GPT-FM ≈19.4M params, MACs within ±10% of rho x GPT-µ."""
     n = sum(p.numel() for p in build("GPTFM").parameters())
     assert 18e6 < n < 21e6, n
     rho = t2_training_macs_per_token() / transformer_macs_per_token(config.SEQ)

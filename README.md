@@ -9,17 +9,18 @@ quantization.
 
 ## Arms
 
-| arm | model | protocol seeds |
-|---|---|---|
-| `T2` | 2-layer recurrent LIF spiking net, **latency-coded** input (one spike per channel, timing carries the value), 12 timesteps per character | 10 (s10–s19) |
-| `R2` | same spiking core, **rate-coded** input (spike *count* carries the value, no timing information) | 5 (s10–s14) |
-| `GPTU` | nanoGPT-style transformer, 6 layers, d=160 (parameter-matched) | 10 (s10–s19) |
-| `GPTFM` | compute-matched transformer, 8 layers, d=448 (21.1M multiply-accumulates per character, ~9x `GPTU`) | 3 (s10–s12) |
-| `GPTQ` | `GPTU` with W4A4 quantization-aware training | 5 (s10–s14) |
-| `LSTMU` | 2-layer LSTM, hidden 384 | 5 (s10–s14) |
-| `LSTM12` | `LSTMU` with each character presented for 12 steps (matches the spiking arms' unroll depth) | 5 (s10–s14) |
+| arm (code) | in the paper | model | main seeds |
+|---|---|---|---|
+| `T2` | T2 | 2-layer recurrent LIF spiking net, **latency-coded** input (one spike per channel, timing carries the value), 12 timesteps per character | 10 (s10–s19) |
+| `R2` | R2 | same spiking core, **rate-coded** input (spike *count* carries the value, no timing information) | 5 (s10–s14) |
+| `GPTU` | GPT-PM | nanoGPT-style transformer, 6 layers, d=160 (parameter-matched) | 10 (s10–s19) |
+| `GPTFM` | GPT-FM | compute-matched transformer, 8 layers, d=448 (21.1M multiply-accumulates per character, ~9x `GPTU`) | 3 (s10–s12) |
+| `GPTQ` | GPT-PM-Q | `GPTU` with W4A4 quantization-aware training | 5 (s10–s14) |
+| `LSTMU` | LSTM-PM | 2-layer LSTM, hidden 384 | 5 (s10–s14) |
+| `LSTM12` | LSTM-12 | `LSTMU` with each character presented for 12 steps (matches the spiking arms' unroll depth) | 5 (s10–s14) |
 
-43 protocol runs in total, 6,000 steps each.
+43 main runs in total, 6,000 steps each. Only `T2` and `GPTU` were tuned; the other arms use their
+screening recipes (see `src/stage2/config.py`, `ARM_OVERRIDES`).
 
 ## Layout
 
@@ -46,22 +47,22 @@ generation samples.
 | folders | stage | seeds |
 |---|---|---|
 | `anchor/` | reference check: our GPT harness reproduces nanoGPT's published tiny-shakespeare result | n/a |
-| `g0/`, `g0new/`, `g0spike/` | gate 0: each arm can memorize a small corpus (positive control) | n/a |
-| `g1a/`, `g1b/` | gate 1: screening, 600 steps | 0–2 |
+| `g0/`, `g0new/`, `g0spike/` | screening phase: each arm can memorize a small corpus (positive control) | n/a |
+| `g1a/`, `g1b/` | screening phase: untuned recipes, 600 steps | 0–2 |
 | `tuneG/`, `tuneT2/` | tuning grids: learning rate x dropout (`GPTU`), learning rate x surrogate slope (`T2`) | 99 |
-| `pd1/`–`pd3/`, `pr10/`, `pr13/`, `pt10/`–`pt19/` | protocol runs (dense, `R2`, `T2`) | 10–19 |
-| `scoring.json` | all protocol statistics, written by `scripts/score.py` | |
+| `pd1/`–`pd3/`, `pr10/`, `pr13/`, `pt10/`–`pt19/` | main runs (dense, `R2`, `T2`) | 10–19 |
+| `scoring.json` | all main-run statistics, written by `scripts/score.py` (its region label `T2 behind (minor)` is the paper's "learned but worse (minor)") | |
 | `sparsity_drift.json` | `T2` spike rates and synaptic ops across checkpoints (seeds 10, 14, 18) | |
 
-Screening (0–2), tuning (99), and protocol (10–19) seeds are disjoint by
+Screening (0–2), tuning (99), and main (10–19) seeds are disjoint by
 design. `pt18/results_p_T2_s19.json` is a placeholder for a run that ran out of
 time on that pod. The complete `T2` seed-19 run is in `pt19/`. The scorer skips
 incomplete runs.
 
 ## Checkpoints
 
-Trained weights for all 43 protocol runs and every intermediate checkpoint
-(4.0 GB, 323 files, in seven archives): https://doi.org/10.5281/zenodo.23538593
+Final weights of all 43 main runs, their states at six evaluation checkpoints, and
+22 screening-phase states (4.0 GB, 323 files, in seven archives): https://doi.org/10.5281/zenodo.23538593
 
 ## Setup
 
@@ -91,7 +92,7 @@ mkdir -p out && cp data/tinystories_12mib.bin out/
 ARMS=T2 SEEDS=10 OUT=out python scripts/protocol.py
 ```
 
-- `protocol.py`: full runs. `ARMS` (space-separated), `SEEDS` (comma-separated), `STEPS` (default 6000)
+- `protocol.py`: the main runs. `ARMS` (space-separated), `SEEDS` (comma-separated), `STEPS` (default 6000)
 - `gate0.py`, `gate1.py`, `tune.py`, `anchor.py`: the earlier stages above
 
 If the corpus is not in `$OUT`, it is downloaded from a pinned Hugging Face

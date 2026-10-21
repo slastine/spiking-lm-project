@@ -1,0 +1,8 @@
+{
+ "arm": "T2",
+ "seed": 19,
+ "unigram_bpc": 4.454456218451907,
+ "steps": 6000,
+ "complete": false,
+ "skipped": "out_of_time"
+}

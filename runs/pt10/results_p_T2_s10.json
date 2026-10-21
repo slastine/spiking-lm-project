@@ -1,0 +1,754 @@
+{
+ "arm": "T2",
+ "seed": 10,
+ "unigram_bpc": 4.454456218451907,
+ "steps": 6000,
+ "complete": true,
+ "params": 1922624,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 2.5053960485317344,
+   "lr": 0.003999366053025456,
+   "elapsed_s": 1032.1,
+   "tokens_per_s": 1984.3,
+   "val_bpc": 2.5338821369334195,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.4708251953125,
+   "val_p_argmax_curr": 0.012725830078125,
+   "val_bucket_bpc": [
+    2.6098786906099316,
+    2.509067964118981,
+    2.5334936281251204
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 1.9613930390603485,
+   "lr": 0.003976445213726015,
+   "elapsed_s": 2059.1,
+   "tokens_per_s": 1989.3,
+   "val_bpc": 2.0050635187023733,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.569732666015625,
+   "val_p_argmax_curr": 0.01568603515625,
+   "val_bucket_bpc": [
+    2.122999933600941,
+    1.9864961570601243,
+    1.9895049362094186
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 600,
+   "train_loss_bits": 1.8864066254836789,
+   "lr": 0.003958126333632625,
+   "elapsed_s": 2475.0,
+   "tokens_per_s": 1986.0,
+   "val_bpc": 1.8999797112680854,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.591064453125,
+   "val_p_argmax_curr": 0.0172119140625,
+   "val_bucket_bpc": [
+    2.0139051467832303,
+    1.879735174814622,
+    1.886682012703373
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 750,
+   "train_loss_bits": 1.7896470793207897,
+   "lr": 0.003920999782142382,
+   "elapsed_s": 3093.6,
+   "tokens_per_s": 1986.0,
+   "val_bpc": 1.8476175294210928,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.601715087890625,
+   "val_p_argmax_curr": 0.01861572265625,
+   "val_bucket_bpc": [
+    1.9874616103345177,
+    1.8270728259143234,
+    1.8280648218445001
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1000,
+   "train_loss_bits": 1.6704440981899429,
+   "lr": 0.0038340448979717148,
+   "elapsed_s": 4119.6,
+   "tokens_per_s": 1988.5,
+   "val_bpc": 1.7438480134046983,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.622711181640625,
+   "val_p_argmax_curr": 0.020660400390625,
+   "val_bucket_bpc": [
+    1.8635221410075837,
+    1.73947908079728,
+    1.7172061809595407
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1200,
+   "train_loss_bits": 1.6462253723084541,
+   "lr": 0.0037428453439925947,
+   "elapsed_s": 4939.8,
+   "tokens_per_s": 1990.0,
+   "val_bpc": 1.733309432507778,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.621368408203125,
+   "val_p_argmax_curr": 0.01824951171875,
+   "val_bucket_bpc": [
+    1.8745362539341397,
+    1.716677047670386,
+    1.7104770157792315
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 1250,
+   "train_loss_bits": 1.760729916404717,
+   "lr": 0.003717172601392297,
+   "elapsed_s": 5146.1,
+   "tokens_per_s": 1989.9,
+   "val_bpc": 1.7375675509604902,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.625732421875,
+   "val_p_argmax_curr": 0.01739501953125,
+   "val_bucket_bpc": [
+    1.9153663111101773,
+    1.7127983802730273,
+    1.711694824929991
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1500,
+   "train_loss_bits": 1.6547564427175157,
+   "lr": 0.0035725226847074256,
+   "elapsed_s": 6169.9,
+   "tokens_per_s": 1991.6,
+   "val_bpc": 1.6325284590154265,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.644866943359375,
+   "val_p_argmax_curr": 0.019866943359375,
+   "val_bucket_bpc": [
+    1.8091503418852592,
+    1.628111829886169,
+    1.591685675123225
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1750,
+   "train_loss_bits": 1.5138944394892966,
+   "lr": 0.003402743515301453,
+   "elapsed_s": 7195.9,
+   "tokens_per_s": 1992.3,
+   "val_bpc": 1.5882666600240722,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.65350341796875,
+   "val_p_argmax_curr": 0.02032470703125,
+   "val_bucket_bpc": [
+    1.792234644294346,
+    1.5653530674843186,
+    1.5544596863786684
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2000,
+   "train_loss_bits": 1.5228834137062803,
+   "lr": 0.0032109435471928925,
+   "elapsed_s": 8224.3,
+   "tokens_per_s": 1992.1,
+   "val_bpc": 1.6518352314012854,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.644622802734375,
+   "val_p_argmax_curr": 0.016815185546875,
+   "val_bucket_bpc": [
+    1.8306338986830888,
+    1.624093397921209,
+    1.6279423696475188
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2250,
+   "train_loss_bits": 1.5973586948445855,
+   "lr": 0.0030006344089502216,
+   "elapsed_s": 9259.0,
+   "tokens_per_s": 1990.7,
+   "val_bpc": 1.57419159987746,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.655303955078125,
+   "val_p_argmax_curr": 0.020111083984375,
+   "val_bucket_bpc": [
+    1.7733490574204502,
+    1.5634735264205892,
+    1.5324410915540045
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2400,
+   "train_loss_bits": 1.389344560738788,
+   "lr": 0.0028671543127961785,
+   "elapsed_s": 9869.8,
+   "tokens_per_s": 1992.0,
+   "val_bpc": 1.5542799645085166,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.659820556640625,
+   "val_p_argmax_curr": 0.017608642578125,
+   "val_bucket_bpc": [
+    1.7366102955257878,
+    1.536029108271405,
+    1.522385609923358
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 2500,
+   "train_loss_bits": 1.51600002308381,
+   "lr": 0.002775666609962712,
+   "elapsed_s": 10275.9,
+   "tokens_per_s": 1993.0,
+   "val_bpc": 1.6047986643209107,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.649993896484375,
+   "val_p_argmax_curr": 0.021026611328125,
+   "val_bucket_bpc": [
+    1.7605544081095115,
+    1.5900623882092813,
+    1.5769118494661571
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2750,
+   "train_loss_bits": 1.465933809625836,
+   "lr": 0.0025401590422077834,
+   "elapsed_s": 11287.8,
+   "tokens_per_s": 1995.8,
+   "val_bpc": 1.5359533212499248,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.665283203125,
+   "val_p_argmax_curr": 0.020263671875,
+   "val_bucket_bpc": [
+    1.7386623925158828,
+    1.5186166674572499,
+    1.498278801751918
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3000,
+   "train_loss_bits": 1.4742773759497942,
+   "lr": 0.0022984235682533814,
+   "elapsed_s": 12302.4,
+   "tokens_per_s": 1997.7,
+   "val_bpc": 1.5226440998476047,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.665374755859375,
+   "val_p_argmax_curr": 0.01959228515625,
+   "val_bucket_bpc": [
+    1.7206860779170987,
+    1.5031032590739215,
+    1.4877892359104936
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3250,
+   "train_loss_bits": 1.4805070390185038,
+   "lr": 0.00205488607619909,
+   "elapsed_s": 13323.1,
+   "tokens_per_s": 1998.3,
+   "val_bpc": 1.4761387871757452,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.674041748046875,
+   "val_p_argmax_curr": 0.0206298828125,
+   "val_bucket_bpc": [
+    1.6774513593166973,
+    1.4578119719345026,
+    1.4395556695801137
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3500,
+   "train_loss_bits": 1.4188422725906793,
+   "lr": 0.001814005446945811,
+   "elapsed_s": 14337.2,
+   "tokens_per_s": 1999.8,
+   "val_bpc": 1.4519404842340464,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.68035888671875,
+   "val_p_argmax_curr": 0.020843505859375,
+   "val_bucket_bpc": [
+    1.6657453601857202,
+    1.4260218961633169,
+    1.4179279913208613
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3600,
+   "train_loss_bits": 1.4082119174516923,
+   "lr": 0.0017193885003527094,
+   "elapsed_s": 14743.4,
+   "tokens_per_s": 2000.3,
+   "val_bpc": 1.4643118842412115,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.674072265625,
+   "val_p_argmax_curr": 0.0213623046875,
+   "val_bucket_bpc": [
+    1.6724153633341325,
+    1.4420520550849376,
+    1.4289806283612105
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 3750,
+   "train_loss_bits": 1.4059121869421862,
+   "lr": 0.001580191917406613,
+   "elapsed_s": 15351.9,
+   "tokens_per_s": 2001.1,
+   "val_bpc": 1.4781993113157326,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.67462158203125,
+   "val_p_argmax_curr": 0.0186767578125,
+   "val_bucket_bpc": [
+    1.7149127923102852,
+    1.4481402409254813,
+    1.4415652868554456
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4000,
+   "train_loss_bits": 1.3307061945160277,
+   "lr": 0.0013577263343309684,
+   "elapsed_s": 16363.9,
+   "tokens_per_s": 2002.5,
+   "val_bpc": 1.4471359768995429,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.678863525390625,
+   "val_p_argmax_curr": 0.020599365234375,
+   "val_bucket_bpc": [
+    1.6614359909030507,
+    1.4229790644491518,
+    1.411678743727785
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4250,
+   "train_loss_bits": 1.3844958538630128,
+   "lr": 0.0011506817771084865,
+   "elapsed_s": 17374.8,
+   "tokens_per_s": 2003.8,
+   "val_bpc": 1.4218699196699622,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.684661865234375,
+   "val_p_argmax_curr": 0.020050048828125,
+   "val_bucket_bpc": [
+    1.6228860797121523,
+    1.4012164944640724,
+    1.3871059485638322
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4500,
+   "train_loss_bits": 1.3077784349054091,
+   "lr": 0.0009628489845451214,
+   "elapsed_s": 18386.2,
+   "tokens_per_s": 2005.0,
+   "val_bpc": 1.405438181258577,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.68658447265625,
+   "val_p_argmax_curr": 0.01953125,
+   "val_bucket_bpc": [
+    1.6205737729713017,
+    1.3816879791137011,
+    1.3694668059520645
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4750,
+   "train_loss_bits": 1.3685103029414596,
+   "lr": 0.000797666950958582,
+   "elapsed_s": 19399.7,
+   "tokens_per_s": 2005.8,
+   "val_bpc": 1.4184965659646136,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.685821533203125,
+   "val_p_argmax_curr": 0.01898193359375,
+   "val_bucket_bpc": [
+    1.6395845632150257,
+    1.3947907640074357,
+    1.3810040041112197
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4800,
+   "train_loss_bits": 1.2980077350467598,
+   "lr": 0.0007676227228686241,
+   "elapsed_s": 19602.2,
+   "tokens_per_s": 2006.0,
+   "val_bpc": 1.3924073137766781,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.687286376953125,
+   "val_p_argmax_curr": 0.019439697265625,
+   "val_bucket_bpc": [
+    1.59740341033381,
+    1.3731356258515954,
+    1.3556121415725328
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 5000,
+   "train_loss_bits": 1.3713377407173069,
+   "lr": 0.0006581599622956367,
+   "elapsed_s": 20411.4,
+   "tokens_per_s": 2006.7,
+   "val_bpc": 1.3738105717649065,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.695220947265625,
+   "val_p_argmax_curr": 0.018463134765625,
+   "val_bucket_bpc": [
+    1.595807411333803,
+    1.3547372658275938,
+    1.3326163413256666
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 5250,
+   "train_loss_bits": 1.2864397304952688,
+   "lr": 0.0005468822250648788,
+   "elapsed_s": 21422.8,
+   "tokens_per_s": 2007.6,
+   "val_bpc": 1.3788952388376654,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.691680908203125,
+   "val_p_argmax_curr": 0.01885986328125,
+   "val_bucket_bpc": [
+    1.6062784030489343,
+    1.3569440325483648,
+    1.338512938493149
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 5500,
+   "train_loss_bits": 1.2405264036055104,
+   "lr": 0.00046587110186312343,
+   "elapsed_s": 22430.3,
+   "tokens_per_s": 2008.7,
+   "val_bpc": 1.339790855580385,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.699005126953125,
+   "val_p_argmax_curr": 0.019256591796875,
+   "val_bucket_bpc": [
+    1.5415372539581385,
+    1.3282318729521205,
+    1.2980235789484706
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 5750,
+   "train_loss_bits": 1.2753219120302426,
+   "lr": 0.00041660980969715684,
+   "elapsed_s": 23440.0,
+   "tokens_per_s": 2009.6,
+   "val_bpc": 1.348012314222231,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.695404052734375,
+   "val_p_argmax_curr": 0.01953125,
+   "val_bucket_bpc": [
+    1.5563913955131594,
+    1.3294130497982464,
+    1.3098669062261616
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 6000,
+   "train_loss_bits": 1.235198639055757,
+   "lr": 0.00040000026405005186,
+   "elapsed_s": 24451.3,
+   "tokens_per_s": 2010.2,
+   "val_bpc": 1.3347048986377448,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.700714111328125,
+   "val_p_argmax_curr": 0.0191650390625,
+   "val_bucket_bpc": [
+    1.5571003080000159,
+    1.3071159577342855,
+    1.2997977519747712
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  }
+ ],
+ "death": null,
+ "steps_done": 6000,
+ "wall_s": 24452.4,
+ "resumed_from": null,
+ "final_val": {
+  "bpc": 1.3325532300331744,
+  "n_chars": 499968,
+  "p_argmax_next": 0.7013868887608807,
+  "p_argmax_curr": 0.01687708013312852,
+  "bucket_bpc": [
+   1.5371817125733271,
+   1.314223030617189,
+   1.2951437385300304
+  ],
+  "bucket_n": [
+   62496,
+   187488,
+   249984
+  ]
+ },
+ "final_test": {
+  "bpc": 1.3589490265460966,
+  "n_chars": 499968,
+  "p_argmax_next": 0.7027169738863287,
+  "p_argmax_curr": 0.017845142089093703,
+  "bucket_bpc": [
+   1.5511627252445688,
+   1.335645436178769,
+   1.3283733228264152
+  ],
+  "bucket_n": [
+   62496,
+   187488,
+   249984
+  ]
+ },
+ "accounting": {
+  "runtime": {
+   "spikes_in": {
+    "value": 65.0,
+    "per": "token"
+   },
+   "spikes_l1": {
+    "value": 63.9195556640625,
+    "per": "token"
+   },
+   "spikes_l2": {
+    "value": 204.35955810546875,
+    "per": "token"
+   },
+   "synops": {
+    "value": 305252.93768310547,
+    "per": "token"
+   },
+   "dense_macs": {
+    "value": 126016.0,
+    "per": "token"
+   },
+   "rate_l1": {
+    "value": 0.006935715675354004,
+    "per": "neuron_step"
+   },
+   "rate_l2": {
+    "value": 0.022174431218041316,
+    "per": "neuron_step"
+   },
+   "tokens": {
+    "value": 16384.0,
+    "per": "run"
+   }
+  },
+  "hooked_synops": {
+   "value": 305198.78143310547,
+   "per": "token"
+  },
+  "hook_tokens": {
+   "value": 16384.0,
+   "per": "run"
+  },
+  "counters_agree_5pct": true,
+  "efficiency_status": "OK",
+  "acct_eval_bpc": 1.3409105486288275
+ },
+ "induction": {
+  "acc_d64": 0.015333333561817805,
+  "acc_d128": 0.019333333671092988,
+  "acc_d192": 0.011333333502213161,
+  "n_per_dist": 300
+ },
+ "induction_sha": "476eb6b0a8907d7afa400dbfc3bd7b873afd731fb14c581e5bdfa8f303ae75be",
+ "generations_first3": [
+  "Timmy likes to always be there.\nShe took out the expring in the house. She ran all the hats with his friend Sammy's laughter and. He was so happy and asked their if their other elephant. He wanted to pet the permisture is better that it could help her be all its hard on the elevator box. One day, his mom was walking in the punshine. \nShe finds sirches over and pinches. He is able to fly the door said in a nearry. One day, his friend, Jack and Sam wanted to take a closer look. There were somee bossy flowers ",
+  "efore, but he wanted to play with out what was outside. As he laughed at chapping, they went for a wall again!\nThelpy was polited but Jill played a fierce of money. After they playing in the park, She decided to have trime to build the bear. Rary was scared and started to climb it all dream. \nJir thought the elephant was raining, he heard a voice I it was the irshamer. She separated but he had a teddy bear but he was very sad exploring it. She shared around all around in the park. She wants to do jex. They ",
+  "g was so excited! The puppies had a big mess. One day, she decided what was a rewing bird sives. He say, \"You can have it\".\"\nBut then something special. They worked angry as his car is broken!\nTom hugged her to a rain brother and gave him some beautiful shelf and blossed with heard. They look it soon and why they all played on the slide. They learned his lesson\u0001 so Anna had a bright covering up. His mom came in the cold in the forest. He would ruree and listened to one the heliletains or stories.\n\u0000\nOnce the"
+ ],
+ "novelty_8gram": [
+  {
+   "novel_frac": 0.15841584158415842,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.20396039603960395,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.18217821782178217,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.15445544554455445,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.1603960396039604,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.1782178217821782,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.15445544554455445,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.21782178217821782,
+   "n_grams": 505
+  }
+ ]
+}

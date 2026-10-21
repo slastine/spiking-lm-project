@@ -1,0 +1,13 @@
+# checkpoints live on Zenodo (doi:10.5281/zenodo.23538593), not in git
+*.pt
+*.zip
+
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# paper source, not released yet
+arxiv/
+
+# local run output (see README)
+out/

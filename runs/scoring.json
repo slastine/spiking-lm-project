@@ -1,0 +1,339 @@
+{
+ "partial": false,
+ "counts": {
+  "T2": 10,
+  "GPTU": 10,
+  "R2": 5,
+  "LSTMU": 5,
+  "LSTM12": 5,
+  "GPTQ": 5,
+  "GPTFM": 3
+ },
+ "per_seed": {
+  "T2": [
+   [
+    1.3391,
+    13
+   ],
+   [
+    1.3423,
+    16
+   ],
+   [
+    1.3459,
+    11
+   ],
+   [
+    1.349,
+    19
+   ],
+   [
+    1.3514,
+    17
+   ],
+   [
+    1.3526,
+    14
+   ],
+   [
+    1.3589,
+    10
+   ],
+   [
+    1.3612,
+    12
+   ],
+   [
+    1.3649,
+    15
+   ],
+   [
+    1.3671,
+    18
+   ]
+  ],
+  "GPTU": [
+   [
+    1.1354,
+    11
+   ],
+   [
+    1.1381,
+    17
+   ],
+   [
+    1.1391,
+    15
+   ],
+   [
+    1.1395,
+    19
+   ],
+   [
+    1.1397,
+    14
+   ],
+   [
+    1.1435,
+    16
+   ],
+   [
+    1.1446,
+    18
+   ],
+   [
+    1.1489,
+    12
+   ],
+   [
+    1.1507,
+    13
+   ],
+   [
+    1.1594,
+    10
+   ]
+  ],
+  "R2": [
+   [
+    1.3605,
+    13
+   ],
+   [
+    1.362,
+    14
+   ],
+   [
+    1.3666,
+    12
+   ],
+   [
+    1.3683,
+    11
+   ],
+   [
+    1.3699,
+    10
+   ]
+  ],
+  "LSTMU": [
+   [
+    1.2626,
+    13
+   ],
+   [
+    1.2647,
+    11
+   ],
+   [
+    1.2721,
+    10
+   ],
+   [
+    1.2781,
+    12
+   ],
+   [
+    1.3056,
+    14
+   ]
+  ],
+  "LSTM12": [
+   [
+    1.2502,
+    12
+   ],
+   [
+    1.2523,
+    10
+   ],
+   [
+    1.253,
+    11
+   ],
+   [
+    1.2548,
+    14
+   ],
+   [
+    1.2587,
+    13
+   ]
+  ],
+  "GPTQ": [
+   [
+    1.4456,
+    14
+   ],
+   [
+    1.49,
+    11
+   ],
+   [
+    1.4932,
+    13
+   ],
+   [
+    1.5063,
+    12
+   ],
+   [
+    1.5351,
+    10
+   ]
+  ],
+  "GPTFM": [
+   [
+    1.0411,
+    12
+   ],
+   [
+    1.0455,
+    11
+   ],
+   [
+    1.0556,
+    10
+   ]
+  ]
+ },
+ "medians": {
+  "T2": 1.352,
+  "GPTU": 1.1416,
+  "R2": 1.3666,
+  "LSTMU": 1.2721,
+  "LSTM12": 1.253,
+  "GPTQ": 1.4932,
+  "GPTFM": 1.0455
+ },
+ "P1": {
+  "delta": 0.2104,
+  "bca_ci": [
+   0.2004,
+   0.2205
+  ],
+  "pct_ci": [
+   0.2013,
+   0.2215
+  ],
+  "pct_region_differs": false,
+  "hodges_lehmann": 0.2094,
+  "mw_u": 100.0,
+  "mw_p": 9.99990000099999e-06,
+  "region": "T2 behind (minor)",
+  "trailing_arm": "T2",
+  "trailing_terminal_slope": 0.055297624727581485,
+  "horizon_censored": false
+ },
+ "deaths": {
+  "n": 0,
+  "runs": [],
+  "rate": 0.0
+ },
+ "P1_sensitivities": {
+  "identical_to_primary": true,
+  "fragile": false
+ },
+ "holm_family_m4": {
+  "S6_bucket_sign": {
+   "p": 0.001953125,
+   "holm_p": 0.0078125,
+   "reject": true
+  },
+  "S2_R2_vs_LSTM12": {
+   "p": 0.008219917800821992,
+   "holm_p": 0.024659753402465977,
+   "reject": true
+  },
+  "S3_R2_vs_LSTMU": {
+   "p": 0.008219917800821992,
+   "holm_p": 0.024659753402465977,
+   "reject": true
+  },
+  "S4_T2_vs_R2": {
+   "p": 0.01922980770192298,
+   "holm_p": 0.024659753402465977,
+   "reject": true
+  }
+ },
+ "criteria_outside_holm": {
+  "S1_T2_vs_unigram": {
+   "pass": true,
+   "note": "max T2 1.3671 vs unigram-0.10 4.3545"
+  },
+  "S5_C3_ratio": {
+   "pass": true,
+   "gated_on_S1": true,
+   "R": 5.4,
+   "ci95": [
+    5.37,
+    5.45
+   ],
+   "t2_ops_median": 434561,
+   "n_ok": 10,
+   "gpt_macs": 2344960,
+   "exchange_rates": {
+    "1synop=1mac": 5.4,
+    "1synop=0.1mac": 14.95,
+    "1synop=10mac": 0.73
+   },
+   "breakeven_macs_per_synop": 7.19,
+   "deviation": "final-checkpoint ops, not \u00a78 grid interpolation; coincides here (see report Deviations log)"
+  }
+ },
+ "secondary_notes": {
+  "S2_R2_vs_LSTM12": {
+   "direction": "R2 worse by 0.1137",
+   "bca_ci": [
+    0.1072,
+    0.1181
+   ],
+   "pct_ci": [
+    0.1058,
+    0.1176
+   ]
+  },
+  "S3_R2_vs_LSTMU": {
+   "direction": "R2 worse by 0.0946",
+   "bca_ci": [
+    0.0611,
+    0.1052
+   ],
+   "pct_ci": [
+    0.0611,
+    0.1052
+   ]
+  },
+  "S4_T2_vs_R2": {
+   "direction": "T2 better by 0.0147",
+   "bca_ci": [
+    -0.0243,
+    -0.0054
+   ],
+   "pct_ci": [
+    -0.0224,
+    -0.0017
+   ]
+  },
+  "S6": "10/10 seeds: T2 gap WIDENS with depth"
+ },
+ "crossover_step_T2_GPTU": 600,
+ "terminal_slopes": {
+  "T2": {
+   "median": 0.0553,
+   "n": 10
+  },
+  "R2": {
+   "median": 0.0355,
+   "n": 5
+  },
+  "GPTU": {
+   "median": 0.0295,
+   "n": 10
+  },
+  "LSTMU": {
+   "median": 0.0163,
+   "n": 5
+  }
+ }
+}

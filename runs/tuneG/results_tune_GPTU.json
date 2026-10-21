@@ -1,0 +1,65 @@
+{
+ "arm": "GPTU",
+ "grid": [
+  {
+   "arm": "GPTU",
+   "point": {
+    "LR_DENSE": 0.0005,
+    "GPT_DROPOUT": 0.0
+   },
+   "death": null,
+   "wall_s": 31.6,
+   "val_bpc": 1.8579605660439822
+  },
+  {
+   "arm": "GPTU",
+   "point": {
+    "LR_DENSE": 0.0005,
+    "GPT_DROPOUT": 0.1
+   },
+   "death": null,
+   "wall_s": 33.5,
+   "val_bpc": 2.036354171187341
+  },
+  {
+   "arm": "GPTU",
+   "point": {
+    "LR_DENSE": 0.001,
+    "GPT_DROPOUT": 0.0
+   },
+   "death": null,
+   "wall_s": 31.7,
+   "val_bpc": 1.6215014903857186
+  },
+  {
+   "arm": "GPTU",
+   "point": {
+    "LR_DENSE": 0.001,
+    "GPT_DROPOUT": 0.1
+   },
+   "death": null,
+   "wall_s": 33.8,
+   "val_bpc": 1.84498331415349
+  },
+  {
+   "arm": "GPTU",
+   "point": {
+    "LR_DENSE": 0.002,
+    "GPT_DROPOUT": 0.0
+   },
+   "death": null,
+   "wall_s": 32.0,
+   "val_bpc": 1.5172260874018109
+  },
+  {
+   "arm": "GPTU",
+   "point": {
+    "LR_DENSE": 0.002,
+    "GPT_DROPOUT": 0.1
+   },
+   "death": null,
+   "wall_s": 33.9,
+   "val_bpc": 1.6324125857044076
+  }
+ ]
+}

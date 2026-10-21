@@ -1,0 +1,32 @@
+{
+ "arm": "GPTFM",
+ "pass": true,
+ "pass_step": 250,
+ "params": 19426176,
+ "final_bpc": 0.10621978508998405,
+ "death": null,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 0.11623681784924722,
+   "lr": 0.0009997686045977628,
+   "elapsed_s": 14.6,
+   "tokens_per_s": 54856.0,
+   "corpus_bpc": 0.10621978508998405
+  }
+ ],
+ "wall_s": 14.6,
+ "tokens_per_s": 54856.0,
+ "pass_final": true,
+ "pass_ever": true,
+ "peak_mem_gb": 0.95,
+ "probe_gate1_shape": {
+  "s_per_step": 0.1386,
+  "shape": [
+   32,
+   256
+  ]
+ },
+ "proj_gate1_h_per_seed": 0.023,
+ "proj_protocol_h_per_seed": 0.23
+}

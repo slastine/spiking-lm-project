@@ -1,0 +1,40 @@
+{
+ "arm": "LSTM12",
+ "pass": true,
+ "pass_step": 500,
+ "params": 1902656,
+ "final_bpc": 0.11996522973730206,
+ "death": null,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 0.9490305364075299,
+   "lr": 0.0009997686045977628,
+   "elapsed_s": 16.5,
+   "tokens_per_s": 48554.0,
+   "corpus_bpc": 0.9401963035806601
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 0.12319219396001933,
+   "lr": 0.000991410740489197,
+   "elapsed_s": 31.6,
+   "tokens_per_s": 50584.0,
+   "corpus_bpc": 0.11996522973730206
+  }
+ ],
+ "wall_s": 31.7,
+ "tokens_per_s": 50584.0,
+ "pass_final": true,
+ "pass_ever": true,
+ "peak_mem_gb": 1.03,
+ "probe_gate1_shape": {
+  "s_per_step": 0.1996,
+  "shape": [
+   32,
+   256
+  ]
+ },
+ "proj_gate1_h_per_seed": 0.033,
+ "proj_protocol_h_per_seed": 0.33
+}

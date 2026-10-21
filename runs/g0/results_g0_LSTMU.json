@@ -1,0 +1,184 @@
+{
+ "arm": "LSTMU",
+ "pass": true,
+ "pass_step": 500,
+ "params": 1902656,
+ "final_bpc": 0.04004179888086827,
+ "death": null,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 1.665674159368263,
+   "lr": 0.0009997686045977628,
+   "elapsed_s": 2.9,
+   "tokens_per_s": 276845.2,
+   "corpus_bpc": 1.663848735512005
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 0.0795875997966482,
+   "lr": 0.000991410740489197,
+   "elapsed_s": 5.7,
+   "tokens_per_s": 280340.6,
+   "corpus_bpc": 0.08164034172168397
+  },
+  {
+   "step": 750,
+   "train_loss_bits": 0.04823295364218616,
+   "lr": 0.0009712613230308674,
+   "elapsed_s": 8.5,
+   "tokens_per_s": 281045.9,
+   "corpus_bpc": 0.04922547089477327
+  },
+  {
+   "step": 1000,
+   "train_loss_bits": 0.04348302392704248,
+   "lr": 0.0009398586103781224,
+   "elapsed_s": 11.4,
+   "tokens_per_s": 281251.2,
+   "corpus_bpc": 0.044246833813500176
+  },
+  {
+   "step": 1250,
+   "train_loss_bits": 0.041783144718685564,
+   "lr": 0.000898041473740035,
+   "elapsed_s": 14.0,
+   "tokens_per_s": 285939.4,
+   "corpus_bpc": 0.04246905183876024
+  },
+  {
+   "step": 1500,
+   "train_loss_bits": 0.04151268318960136,
+   "lr": 0.0008469269883310777,
+   "elapsed_s": 16.6,
+   "tokens_per_s": 289830.4,
+   "corpus_bpc": 0.04218943492074651
+  },
+  {
+   "step": 1750,
+   "train_loss_bits": 0.04063709532899852,
+   "lr": 0.0007878805925657701,
+   "elapsed_s": 19.1,
+   "tokens_per_s": 292486.4,
+   "corpus_bpc": 0.041285246882750974
+  },
+  {
+   "step": 2000,
+   "train_loss_bits": 0.04024430845225922,
+   "lr": 0.000722479612643756,
+   "elapsed_s": 21.6,
+   "tokens_per_s": 296202.5,
+   "corpus_bpc": 0.04088073831346381
+  },
+  {
+   "step": 2250,
+   "train_loss_bits": 0.04000804997286536,
+   "lr": 0.0006524711269053192,
+   "elapsed_s": 24.4,
+   "tokens_per_s": 295019.0,
+   "corpus_bpc": 0.040641182604185436
+  },
+  {
+   "step": 2500,
+   "train_loss_bits": 0.03985082020877188,
+   "lr": 0.0005797252955409574,
+   "elapsed_s": 27.2,
+   "tokens_per_s": 294071.4,
+   "corpus_bpc": 0.040482297507077394
+  },
+  {
+   "step": 2750,
+   "train_loss_bits": 0.039733627468353475,
+   "lr": 0.0005061854023741567,
+   "elapsed_s": 30.0,
+   "tokens_per_s": 293224.9,
+   "corpus_bpc": 0.040370073452931574
+  },
+  {
+   "step": 3000,
+   "train_loss_bits": 0.039644282481230246,
+   "lr": 0.0004338159432680021,
+   "elapsed_s": 32.8,
+   "tokens_per_s": 292433.3,
+   "corpus_bpc": 0.040287597022927175
+  },
+  {
+   "step": 3250,
+   "train_loss_bits": 0.03957372122425594,
+   "lr": 0.00036455014788744914,
+   "elapsed_s": 35.4,
+   "tokens_per_s": 294182.1,
+   "corpus_bpc": 0.040225489788134346
+  },
+  {
+   "step": 3500,
+   "train_loss_bits": 0.03951812783236453,
+   "lr": 0.0003002383366860476,
+   "elapsed_s": 37.9,
+   "tokens_per_s": 295758.2,
+   "corpus_bpc": 0.04017786402998995
+  },
+  {
+   "step": 3750,
+   "train_loss_bits": 0.03947295013976601,
+   "lr": 0.00024259849267427143,
+   "elapsed_s": 40.6,
+   "tokens_per_s": 295211.0,
+   "corpus_bpc": 0.04014102480872935
+  },
+  {
+   "step": 4000,
+   "train_loss_bits": 0.039434495893924656,
+   "lr": 0.00019317036836241004,
+   "elapsed_s": 43.5,
+   "tokens_per_s": 294502.7,
+   "corpus_bpc": 0.04011229026989066
+  },
+  {
+   "step": 4250,
+   "train_loss_bits": 0.039404643467855355,
+   "lr": 0.00015327435383466527,
+   "elapsed_s": 46.3,
+   "tokens_per_s": 293640.4,
+   "corpus_bpc": 0.04008965036624192
+  },
+  {
+   "step": 4500,
+   "train_loss_bits": 0.03938052290107185,
+   "lr": 0.00012397620472540469,
+   "elapsed_s": 49.2,
+   "tokens_per_s": 292880.7,
+   "corpus_bpc": 0.040071339588382875
+  },
+  {
+   "step": 4750,
+   "train_loss_bits": 0.03936145163742852,
+   "lr": 0.00010605857233098868,
+   "elapsed_s": 52.0,
+   "tokens_per_s": 292234.5,
+   "corpus_bpc": 0.040055925643299295
+  },
+  {
+   "step": 5000,
+   "train_loss_bits": 0.03934876791692738,
+   "lr": 0.00010000009638285205,
+   "elapsed_s": 54.8,
+   "tokens_per_s": 291958.3,
+   "corpus_bpc": 0.04004179888086827
+  }
+ ],
+ "wall_s": 54.8,
+ "tokens_per_s": 291958.3,
+ "pass_final": true,
+ "pass_ever": true,
+ "peak_mem_gb": 0.6,
+ "probe_gate1_shape": {
+  "s_per_step": 0.0389,
+  "shape": [
+   32,
+   256
+  ]
+ },
+ "proj_gate1_h_per_seed": 0.006,
+ "proj_protocol_h_per_seed": 0.06
+}

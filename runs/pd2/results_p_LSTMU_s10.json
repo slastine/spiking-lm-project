@@ -1,0 +1,707 @@
+{
+ "arm": "LSTMU",
+ "seed": 10,
+ "unigram_bpc": 4.454456218451907,
+ "steps": 6000,
+ "complete": true,
+ "params": 1902656,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 2.504959685550833,
+   "lr": 0.000999841513256364,
+   "elapsed_s": 15.7,
+   "tokens_per_s": 130409.8,
+   "val_bpc": 2.5292370575162657,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.483001708984375,
+   "val_p_argmax_curr": 0.0067138671875,
+   "val_bucket_bpc": [
+    2.6373536070158687,
+    2.5005190505098924,
+    2.52374633940482
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 1.8800826514288025,
+   "lr": 0.0009941113034315037,
+   "elapsed_s": 31.4,
+   "tokens_per_s": 130314.8,
+   "val_bpc": 1.9325188288113286,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.5931396484375,
+   "val_p_argmax_curr": 0.018646240234375,
+   "val_bucket_bpc": [
+    2.059360161406271,
+    1.9139018215105301,
+    1.9147710791555412
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 600,
+   "train_loss_bits": 1.809049044103901,
+   "lr": 0.0009895315834081563,
+   "elapsed_s": 38.0,
+   "tokens_per_s": 129503.6,
+   "val_bpc": 1.8298950612149822,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.615325927734375,
+   "val_p_argmax_curr": 0.016845703125,
+   "val_bucket_bpc": [
+    1.9608085990170538,
+    1.8126996625062155,
+    1.81006339777869
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 750,
+   "train_loss_bits": 1.6595426338997021,
+   "lr": 0.0009802499455355954,
+   "elapsed_s": 47.5,
+   "tokens_per_s": 129411.8,
+   "val_bpc": 1.7268855365327505,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.62994384765625,
+   "val_p_argmax_curr": 0.0184326171875,
+   "val_bucket_bpc": [
+    1.8783184963919146,
+    1.7123170581608127,
+    1.699953741338238
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1000,
+   "train_loss_bits": 1.5288011432419872,
+   "lr": 0.0009585112244929287,
+   "elapsed_s": 63.4,
+   "tokens_per_s": 129307.0,
+   "val_bpc": 1.5918506064854023,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.653778076171875,
+   "val_p_argmax_curr": 0.018798828125,
+   "val_bucket_bpc": [
+    1.7623956543696488,
+    1.5855835013604112,
+    1.553914673358084
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1200,
+   "train_loss_bits": 1.4755473173415967,
+   "lr": 0.0009357113359981487,
+   "elapsed_s": 76.4,
+   "tokens_per_s": 128752.5,
+   "val_bpc": 1.5447478260844454,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.662353515625,
+   "val_p_argmax_curr": 0.021209716796875,
+   "val_bucket_bpc": [
+    1.718700022264935,
+    1.5340452310661523,
+    1.5092865513203921
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 1250,
+   "train_loss_bits": 1.518498178576749,
+   "lr": 0.0009292931503480742,
+   "elapsed_s": 79.6,
+   "tokens_per_s": 128715.9,
+   "val_bpc": 1.5259786714651837,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.67022705078125,
+   "val_p_argmax_curr": 0.019378662109375,
+   "val_bucket_bpc": [
+    1.7047692555623966,
+    1.5149744188772774,
+    1.4895341718861477
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1500,
+   "train_loss_bits": 1.4648645074940965,
+   "lr": 0.0008931306711768564,
+   "elapsed_s": 95.8,
+   "tokens_per_s": 128295.8,
+   "val_bpc": 1.4649461562575936,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.68206787109375,
+   "val_p_argmax_curr": 0.019561767578125,
+   "val_bucket_bpc": [
+    1.6540462403607776,
+    1.4560862980157452,
+    1.4243162868871602
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 1750,
+   "train_loss_bits": 1.350363961994466,
+   "lr": 0.0008506858788253633,
+   "elapsed_s": 112.7,
+   "tokens_per_s": 127178.3,
+   "val_bpc": 1.4427177425988773,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.686492919921875,
+   "val_p_argmax_curr": 0.01947021484375,
+   "val_bucket_bpc": [
+    1.6448472323314278,
+    1.4287383048061448,
+    1.4026700345016145
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2000,
+   "train_loss_bits": 1.2987730148474366,
+   "lr": 0.0008027358867982231,
+   "elapsed_s": 128.9,
+   "tokens_per_s": 127139.7,
+   "val_bpc": 1.417350473579264,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.692138671875,
+   "val_p_argmax_curr": 0.019012451171875,
+   "val_bucket_bpc": [
+    1.6095673992640347,
+    1.4070316865101462,
+    1.3770353324599096
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2250,
+   "train_loss_bits": 1.4005585605013091,
+   "lr": 0.0007501586022375554,
+   "elapsed_s": 145.8,
+   "tokens_per_s": 126378.0,
+   "val_bpc": 1.392861347974956,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.694732666015625,
+   "val_p_argmax_curr": 0.0211181640625,
+   "val_bucket_bpc": [
+    1.611902407714799,
+    1.3737992495737246,
+    1.352397613845256
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2400,
+   "train_loss_bits": 1.2223826209004485,
+   "lr": 0.0007167885781990446,
+   "elapsed_s": 155.8,
+   "tokens_per_s": 126220.5,
+   "val_bpc": 1.3696626082000718,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.70361328125,
+   "val_p_argmax_curr": 0.01934814453125,
+   "val_bucket_bpc": [
+    1.589431670501017,
+    1.348594389504076,
+    1.330521420655507
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 2500,
+   "train_loss_bits": 1.2940570355824648,
+   "lr": 0.000693916652490678,
+   "elapsed_s": 162.3,
+   "tokens_per_s": 126213.3,
+   "val_bpc": 1.358636972435908,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.704864501953125,
+   "val_p_argmax_curr": 0.02020263671875,
+   "val_bucket_bpc": [
+    1.5891927865989686,
+    1.3399982379935504,
+    1.3149771127225736
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 2750,
+   "train_loss_bits": 1.298880632991214,
+   "lr": 0.0006350397605519459,
+   "elapsed_s": 179.3,
+   "tokens_per_s": 125654.4,
+   "val_bpc": 1.3415675223551233,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.70745849609375,
+   "val_p_argmax_curr": 0.020904541015625,
+   "val_bucket_bpc": [
+    1.5813474540145598,
+    1.3213150746997202,
+    1.2968119611731421
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3000,
+   "train_loss_bits": 1.2983015029122649,
+   "lr": 0.0005746058920633453,
+   "elapsed_s": 195.5,
+   "tokens_per_s": 125697.4,
+   "val_bpc": 1.3303067003159046,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.70880126953125,
+   "val_p_argmax_curr": 0.020172119140625,
+   "val_bucket_bpc": [
+    1.561640649982794,
+    1.3121487433740342,
+    1.286091680605585
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3250,
+   "train_loss_bits": 1.2954897585533087,
+   "lr": 0.0005137215190497725,
+   "elapsed_s": 211.8,
+   "tokens_per_s": 125721.7,
+   "val_bpc": 1.314641316596764,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.712646484375,
+   "val_p_argmax_curr": 0.01934814453125,
+   "val_bucket_bpc": [
+    1.543745511195217,
+    1.296390775661179,
+    1.2710531736488395
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3500,
+   "train_loss_bits": 1.2517812492476117,
+   "lr": 0.00045350136173645273,
+   "elapsed_s": 228.7,
+   "tokens_per_s": 125349.8,
+   "val_bpc": 1.3029644685251083,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.716064453125,
+   "val_p_argmax_curr": 0.021087646484375,
+   "val_bucket_bpc": [
+    1.5444258745620303,
+    1.2815930444156414,
+    1.2586276850979778
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 3600,
+   "train_loss_bits": 1.234237685994061,
+   "lr": 0.00042984712508817736,
+   "elapsed_s": 236.0,
+   "tokens_per_s": 124986.4,
+   "val_bpc": 1.2949497330295996,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.717529296875,
+   "val_p_argmax_curr": 0.02008056640625,
+   "val_bucket_bpc": [
+    1.5424551253657934,
+    1.270400069532188,
+    1.251485589572947
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 3750,
+   "train_loss_bits": 1.2367949605232342,
+   "lr": 0.00039504797935165326,
+   "elapsed_s": 246.2,
+   "tokens_per_s": 124766.8,
+   "val_bpc": 1.2927413038098703,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.715423583984375,
+   "val_p_argmax_curr": 0.02056884765625,
+   "val_bucket_bpc": [
+    1.5371351860266542,
+    1.2650633332208143,
+    1.2524012252061407
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4000,
+   "train_loss_bits": 1.1892200017543335,
+   "lr": 0.0003394315835827421,
+   "elapsed_s": 262.9,
+   "tokens_per_s": 124634.8,
+   "val_bpc": 1.2919859560072808,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.71612548828125,
+   "val_p_argmax_curr": 0.020111083984375,
+   "val_bucket_bpc": [
+    1.5478486732795018,
+    1.2686031947959733,
+    1.2455572616063806
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4250,
+   "train_loss_bits": 1.2206370829855164,
+   "lr": 0.0002876704442771216,
+   "elapsed_s": 279.6,
+   "tokens_per_s": 124514.1,
+   "val_bpc": 1.2734907697508435,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.721038818359375,
+   "val_p_argmax_curr": 0.020111083984375,
+   "val_bucket_bpc": [
+    1.526700310668204,
+    1.2493201560159335,
+    1.2283162588313603
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4500,
+   "train_loss_bits": 1.1700123343710342,
+   "lr": 0.00024071224613628035,
+   "elapsed_s": 297.0,
+   "tokens_per_s": 124120.2,
+   "val_bpc": 1.2633984838329122,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.72430419921875,
+   "val_p_argmax_curr": 0.020111083984375,
+   "val_bucket_bpc": [
+    1.522424306019802,
+    1.2389442133791793,
+    1.2169826021395014
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4750,
+   "train_loss_bits": 1.213894610647597,
+   "lr": 0.0001994167377396455,
+   "elapsed_s": 314.8,
+   "tokens_per_s": 123591.8,
+   "val_bpc": 1.2619540015483155,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.724761962890625,
+   "val_p_argmax_curr": 0.019561767578125,
+   "val_bucket_bpc": [
+    1.5210302146519081,
+    1.2388875737594949,
+    1.2144848981010208
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 4800,
+   "train_loss_bits": 1.1842245291838782,
+   "lr": 0.00019190568071715604,
+   "elapsed_s": 318.4,
+   "tokens_per_s": 123515.3,
+   "val_bpc": 1.2563508067832052,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.726226806640625,
+   "val_p_argmax_curr": 0.01959228515625,
+   "val_bucket_bpc": [
+    1.508290255823944,
+    1.2340480966193161,
+    1.2100928051632864
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  },
+  {
+   "step": 5000,
+   "train_loss_bits": 1.2547291178747255,
+   "lr": 0.00016453999057390917,
+   "elapsed_s": 332.0,
+   "tokens_per_s": 123371.9,
+   "val_bpc": 1.2555579667627275,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.725311279296875,
+   "val_p_argmax_curr": 0.019561767578125,
+   "val_bucket_bpc": [
+    1.5127863982654504,
+    1.2319739858499106,
+    1.2089388875673224
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 5250,
+   "train_loss_bits": 1.1538222960776052,
+   "lr": 0.0001367205562662197,
+   "elapsed_s": 348.8,
+   "tokens_per_s": 123302.8,
+   "val_bpc": 1.2510975967126006,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.726837158203125,
+   "val_p_argmax_curr": 0.019256591796875,
+   "val_bucket_bpc": [
+    1.5036556673484929,
+    1.229269386682442,
+    1.204329322567572
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 5500,
+   "train_loss_bits": 1.1444770597993592,
+   "lr": 0.00011646777546578086,
+   "elapsed_s": 365.1,
+   "tokens_per_s": 123409.2,
+   "val_bpc": 1.2509206265648627,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.726715087890625,
+   "val_p_argmax_curr": 0.02008056640625,
+   "val_bucket_bpc": [
+    1.506606545671997,
+    1.2290126739122542,
+    1.203430197268861
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 5750,
+   "train_loss_bits": 1.182693088171439,
+   "lr": 0.00010415245242428921,
+   "elapsed_s": 381.6,
+   "tokens_per_s": 123433.2,
+   "val_bpc": 1.2461607487282582,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.7281494140625,
+   "val_p_argmax_curr": 0.020294189453125,
+   "val_bucket_bpc": [
+    1.5043597643211253,
+    1.2223912271989354,
+    1.1994381359770336
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ]
+  },
+  {
+   "step": 6000,
+   "train_loss_bits": 1.158759230053273,
+   "lr": 0.00010000006601251297,
+   "elapsed_s": 397.6,
+   "tokens_per_s": 123623.0,
+   "val_bpc": 1.2400940607190727,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.730072021484375,
+   "val_p_argmax_curr": 0.02001953125,
+   "val_bucket_bpc": [
+    1.4995490656111907,
+    1.2153673410825978,
+    1.193775263232074
+   ],
+   "val_bucket_n": [
+    4096,
+    12288,
+    16384
+   ],
+   "grid": true
+  }
+ ],
+ "death": null,
+ "steps_done": 6000,
+ "wall_s": 397.9,
+ "resumed_from": null,
+ "final_val": {
+  "bpc": 1.228966512289342,
+  "n_chars": 499968,
+  "p_argmax_next": 0.7312307987711214,
+  "p_argmax_curr": 0.017785138248847927,
+  "bucket_bpc": [
+   1.473242422861466,
+   1.2088759112572875,
+   1.1829654854203517
+  ],
+  "bucket_n": [
+   62496,
+   187488,
+   249984
+  ]
+ },
+ "final_test": {
+  "bpc": 1.272094260498851,
+  "n_chars": 499968,
+  "p_argmax_next": 0.7257324468766001,
+  "p_argmax_curr": 0.01919722862263185,
+  "bucket_bpc": [
+   1.486259481668758,
+   1.2461603250239446,
+   1.2380034166753582
+  ],
+  "bucket_n": [
+   62496,
+   187488,
+   249984
+  ]
+ },
+ "induction": {
+  "acc_d64": 0.010666666825612386,
+  "acc_d128": 0.018000000268220902,
+  "acc_d192": 0.012000000178813934,
+  "n_per_dist": 300
+ },
+ "induction_sha": "476eb6b0a8907d7afa400dbfc3bd7b873afd731fb14c581e5bdfa8f303ae75be",
+ "generations_first3": [
+  "Tim and Mia felt sad. They take the top, but the dog and make them smiles. The dog pulled with the show and said to Sam, \"Maybe you are really ushand.\" She guilded and smiled and said\u0001 \"My puddle, the dog names Nemo. And a small dog!\" The dad smiled and said, \"No, the bald delicious sound. Whice is only? I love the car?\" Ben said.\n\"Let's find me!\"\n\"Let's go inside things,\" he said.\nHe ran over to the wire. But the house\u0001 he couldn't help manage up. Sarah was really moving. That was when she escouraded she w",
+  "ack in the wolds. One day, Timmy saw a big, man and a hug.\nOne day, Lucy was looking forward to his friends. They looked another food until it didn't want to manch.\nThe owl was proud of his work and everyone even stepped even bigger. \nThey were so uniform and came to him.\n\"They sle the rules or ripe, honey, mean!\" said Buzzy.\nThen the pig was alpreciate all of them and he got upset. Emma was a very happy for the dinea. Juzzy went out to the museum. He finally in the unique crocodance was high. So she gave h",
+  "g is so many ingredients and cars. Mom hugs Tom. He is relieved.\nHis dad was very bothing shiny. He saw an ice dry put it on shiny and water. She tried to try the beaugh with her grandmawes and said, \"It's okay!\"\nBen put the thing to do anything.\n\u0000\nOnce upon a time there was a lazy named Rala. She liked to play in the field on the bushes. One day, she couldn't kest find his lips of ecterfly enjoying that. Anna and Mia had ever feeling very sad. \nTimmy's mom gave him a window and took the other side. He grab"
+ ],
+ "novelty_8gram": [
+  {
+   "novel_frac": 0.201980198019802,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.19405940594059407,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.15841584158415842,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.1782178217821782,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.1485148514851485,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.16237623762376238,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.14653465346534653,
+   "n_grams": 505
+  },
+  {
+   "novel_frac": 0.13267326732673268,
+   "n_grams": 505
+  }
+ ]
+}

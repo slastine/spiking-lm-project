@@ -1,0 +1,12 @@
+{
+ "T2": {
+  "winner": {
+   "LR_SPIKE": 0.004,
+   "SURROGATE_SLOPE": 5.0
+  },
+  "winner_bpc": 1.5661514539452865,
+  "median_bpc": 1.7958421953745072,
+  "n_scored": 6,
+  "n_dead": 0
+ }
+}

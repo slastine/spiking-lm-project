@@ -1,0 +1,12 @@
+{
+ "GPTU": {
+  "winner": {
+   "LR_DENSE": 0.002,
+   "GPT_DROPOUT": 0.0
+  },
+  "winner_bpc": 1.5172260874018109,
+  "median_bpc": 1.84498331415349,
+  "n_scored": 6,
+  "n_dead": 0
+ }
+}

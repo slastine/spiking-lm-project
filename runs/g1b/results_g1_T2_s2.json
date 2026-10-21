@@ -1,0 +1,131 @@
+{
+ "arm": "T2",
+ "seed": 2,
+ "unigram_bpc": 4.454456218451907,
+ "params": 1922624,
+ "history": [
+  {
+   "step": 100,
+   "train_loss_bits": 3.1641715510694275,
+   "lr": 0.0019769330583067116,
+   "elapsed_s": 619.6,
+   "tokens_per_s": 1322.0,
+   "val_bpc": 2.999705229979927,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.38323974609375,
+   "val_p_argmax_curr": 0.00604248046875
+  },
+  {
+   "step": 200,
+   "train_loss_bits": 2.633488296937727,
+   "lr": 0.001721415520050725,
+   "elapsed_s": 1240.9,
+   "tokens_per_s": 1320.3,
+   "val_bpc": 2.5484361687626844,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.46368408203125,
+   "val_p_argmax_curr": 0.013427734375
+  },
+  {
+   "step": 300,
+   "train_loss_bits": 2.356098726235322,
+   "lr": 0.0012614371273437118,
+   "elapsed_s": 1863.0,
+   "tokens_per_s": 1319.2,
+   "val_bpc": 2.311699986058218,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.51251220703125,
+   "val_p_argmax_curr": 0.015533447265625
+  },
+  {
+   "step": 400,
+   "train_loss_bits": 2.198723378827883,
+   "lr": 0.0007483419843596537,
+   "elapsed_s": 2484.4,
+   "tokens_per_s": 1319.0,
+   "val_bpc": 2.168545755063637,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.537261962890625,
+   "val_p_argmax_curr": 0.016082763671875
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 2.1377664069996847,
+   "lr": 0.0003509509009499502,
+   "elapsed_s": 3106.5,
+   "tokens_per_s": 1318.5,
+   "val_bpc": 2.0997643895387723,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.55413818359375,
+   "val_p_argmax_curr": 0.015380859375
+  },
+  {
+   "step": 600,
+   "train_loss_bits": 2.1115186298033164,
+   "lr": 0.0002000152308280302,
+   "elapsed_s": 3727.9,
+   "tokens_per_s": 1318.5,
+   "val_bpc": 2.060104846284507,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.56201171875,
+   "val_p_argmax_curr": 0.0157470703125
+  }
+ ],
+ "death": null,
+ "steps_done": 600,
+ "wall_s": 3729.0,
+ "final": {
+  "bpc": 2.0790395959798422,
+  "n_chars": 499968,
+  "p_argmax_next": 0.5579717101894521,
+  "p_argmax_curr": 0.01457893305171531
+ },
+ "accounting": {
+  "runtime": {
+   "spikes_in": {
+    "value": 65.0,
+    "per": "token"
+   },
+   "spikes_l1": {
+    "value": 58.44696044921875,
+    "per": "token"
+   },
+   "spikes_l2": {
+    "value": 129.8572998046875,
+    "per": "token"
+   },
+   "synops": {
+    "value": 239554.7947998047,
+    "per": "token"
+   },
+   "dense_macs": {
+    "value": 126016.0,
+    "per": "token"
+   },
+   "rate_l1": {
+    "value": 0.00634190109041002,
+    "per": "neuron_step"
+   },
+   "rate_l2": {
+    "value": 0.014090418815612793,
+    "per": "neuron_step"
+   },
+   "tokens": {
+    "value": 16384.0,
+    "per": "run"
+   }
+  },
+  "hooked_synops": {
+   "value": 239549.02166748047,
+   "per": "token"
+  },
+  "hook_tokens": {
+   "value": 16384.0,
+   "per": "run"
+  },
+  "counters_agree_5pct": true,
+  "efficiency_status": "OK",
+  "acct_eval_bpc": 2.068148990813313
+ },
+ "peak_mem_gb": 1.29
+}

@@ -1,0 +1,95 @@
+{
+ "arm": "T2",
+ "pass": true,
+ "pass_step": 750,
+ "params": 1922624,
+ "final_bpc": 0.30947108540736545,
+ "death": null,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 2.2576948539475334,
+   "lr": 0.0019995372091955255,
+   "elapsed_s": 535.0,
+   "tokens_per_s": 1495.3,
+   "corpus_bpc": 2.1658074472965994
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 0.7687516144497503,
+   "lr": 0.001982821480978394,
+   "elapsed_s": 1070.7,
+   "tokens_per_s": 1494.3,
+   "corpus_bpc": 0.7093137223809601
+  },
+  {
+   "step": 750,
+   "train_loss_bits": 0.31579024394801763,
+   "lr": 0.0019425226460617348,
+   "elapsed_s": 1605.5,
+   "tokens_per_s": 1494.9,
+   "corpus_bpc": 0.30947108540736545
+  }
+ ],
+ "wall_s": 1605.8,
+ "tokens_per_s": 1494.9,
+ "pass_final": true,
+ "pass_ever": true,
+ "peak_mem_gb": 0.86,
+ "accounting": {
+  "runtime": {
+   "spikes_in": {
+    "value": 65.0,
+    "per": "token"
+   },
+   "spikes_l1": {
+    "value": 89.9212646484375,
+    "per": "token"
+   },
+   "spikes_l2": {
+    "value": 210.26763916015625,
+    "per": "token"
+   },
+   "synops": {
+    "value": 349734.87701416016,
+    "per": "token"
+   },
+   "dense_macs": {
+    "value": 126016.0,
+    "per": "token"
+   },
+   "rate_l1": {
+    "value": 0.009757081667582193,
+    "per": "neuron_step"
+   },
+   "rate_l2": {
+    "value": 0.022815499040815566,
+    "per": "neuron_step"
+   },
+   "tokens": {
+    "value": 16384.0,
+    "per": "run"
+   }
+  },
+  "hooked_synops": {
+   "value": 349714.0856933594,
+   "per": "token"
+  },
+  "hook_tokens": {
+   "value": 16384.0,
+   "per": "run"
+  },
+  "counters_agree_5pct": true,
+  "efficiency_status": "OK",
+  "acct_eval_bpc": 6.94798971389152
+ },
+ "probe_gate1_shape": {
+  "s_per_step": 6.0371,
+  "shape": [
+   32,
+   256
+  ]
+ },
+ "proj_gate1_h_per_seed": 1.006,
+ "proj_protocol_h_per_seed": 10.06
+}

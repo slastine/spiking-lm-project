@@ -1,0 +1,134 @@
+{
+ "s10": {
+  "600": {
+   "rate_l1": 0.0064,
+   "rate_l2": 0.01375,
+   "synops": 238000,
+   "val_bpc_16w": 1.9066,
+   "counters_agree": true
+  },
+  "1200": {
+   "rate_l1": 0.00624,
+   "rate_l2": 0.01318,
+   "synops": 231613,
+   "val_bpc_16w": 1.7393,
+   "counters_agree": true
+  },
+  "2400": {
+   "rate_l1": 0.00581,
+   "rate_l2": 0.01398,
+   "synops": 231212,
+   "val_bpc_16w": 1.5222,
+   "counters_agree": true
+  },
+  "3600": {
+   "rate_l1": 0.00597,
+   "rate_l2": 0.01595,
+   "synops": 247448,
+   "val_bpc_16w": 1.464,
+   "counters_agree": true
+  },
+  "4800": {
+   "rate_l1": 0.00628,
+   "rate_l2": 0.01904,
+   "synops": 273706,
+   "val_bpc_16w": 1.4204,
+   "counters_agree": true
+  },
+  "6000": {
+   "rate_l1": 0.00693,
+   "rate_l2": 0.02228,
+   "synops": 305931,
+   "val_bpc_16w": 1.3434,
+   "counters_agree": true
+  }
+ },
+ "s14": {
+  "600": {
+   "rate_l1": 0.00645,
+   "rate_l2": 0.01318,
+   "synops": 234603,
+   "val_bpc_16w": 2.0011,
+   "counters_agree": true
+  },
+  "1200": {
+   "rate_l1": 0.00642,
+   "rate_l2": 0.01359,
+   "synops": 237169,
+   "val_bpc_16w": 1.7193,
+   "counters_agree": true
+  },
+  "2400": {
+   "rate_l1": 0.00605,
+   "rate_l2": 0.01341,
+   "synops": 230593,
+   "val_bpc_16w": 1.6251,
+   "counters_agree": true
+  },
+  "3600": {
+   "rate_l1": 0.00599,
+   "rate_l2": 0.01575,
+   "synops": 246286,
+   "val_bpc_16w": 1.4903,
+   "counters_agree": true
+  },
+  "4800": {
+   "rate_l1": 0.00664,
+   "rate_l2": 0.01921,
+   "synops": 280059,
+   "val_bpc_16w": 1.3915,
+   "counters_agree": true
+  },
+  "6000": {
+   "rate_l1": 0.00729,
+   "rate_l2": 0.02205,
+   "synops": 309389,
+   "val_bpc_16w": 1.3381,
+   "counters_agree": true
+  }
+ },
+ "s18": {
+  "600": {
+   "rate_l1": 0.00661,
+   "rate_l2": 0.01262,
+   "synops": 232841,
+   "val_bpc_16w": 1.9724,
+   "counters_agree": true
+  },
+  "1200": {
+   "rate_l1": 0.00643,
+   "rate_l2": 0.0131,
+   "synops": 233815,
+   "val_bpc_16w": 1.7135,
+   "counters_agree": true
+  },
+  "2400": {
+   "rate_l1": 0.00593,
+   "rate_l2": 0.0136,
+   "synops": 230216,
+   "val_bpc_16w": 1.5967,
+   "counters_agree": true
+  },
+  "3600": {
+   "rate_l1": 0.00625,
+   "rate_l2": 0.0161,
+   "synops": 252420,
+   "val_bpc_16w": 1.4575,
+   "counters_agree": true
+  },
+  "4800": {
+   "rate_l1": 0.00685,
+   "rate_l2": 0.01903,
+   "synops": 281782,
+   "val_bpc_16w": 1.4201,
+   "counters_agree": true
+  },
+  "6000": {
+   "rate_l1": 0.00754,
+   "rate_l2": 0.0217,
+   "synops": 310432,
+   "val_bpc_16w": 1.3853,
+   "counters_agree": true
+  }
+ }
+}

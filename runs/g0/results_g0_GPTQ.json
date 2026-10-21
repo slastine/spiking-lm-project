@@ -1,0 +1,184 @@
+{
+ "arm": "GPTQ",
+ "pass": true,
+ "pass_step": 500,
+ "params": 1898560,
+ "final_bpc": 0.04167222128333689,
+ "death": null,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 0.5810297563149182,
+   "lr": 0.0009997686045977628,
+   "elapsed_s": 5.5,
+   "tokens_per_s": 144829.6,
+   "corpus_bpc": 0.5524739289483083
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 0.13093353078523445,
+   "lr": 0.000991410740489197,
+   "elapsed_s": 11.0,
+   "tokens_per_s": 145088.0,
+   "corpus_bpc": 0.1166047317351055
+  },
+  {
+   "step": 750,
+   "train_loss_bits": 0.11363331223373899,
+   "lr": 0.0009712613230308674,
+   "elapsed_s": 16.6,
+   "tokens_per_s": 144823.3,
+   "corpus_bpc": 0.0924649243925313
+  },
+  {
+   "step": 1000,
+   "train_loss_bits": 0.07436662034970697,
+   "lr": 0.0009398586103781224,
+   "elapsed_s": 22.1,
+   "tokens_per_s": 144900.7,
+   "corpus_bpc": 0.0667977391276445
+  },
+  {
+   "step": 1250,
+   "train_loss_bits": 0.061579978980949114,
+   "lr": 0.000898041473740035,
+   "elapsed_s": 27.6,
+   "tokens_per_s": 144913.3,
+   "corpus_bpc": 0.06018127095377109
+  },
+  {
+   "step": 1500,
+   "train_loss_bits": 0.05239413837330589,
+   "lr": 0.0008469269883310777,
+   "elapsed_s": 33.1,
+   "tokens_per_s": 145163.8,
+   "corpus_bpc": 0.05097931234706732
+  },
+  {
+   "step": 1750,
+   "train_loss_bits": 0.05090692914888543,
+   "lr": 0.0007878805925657701,
+   "elapsed_s": 38.5,
+   "tokens_per_s": 145365.1,
+   "corpus_bpc": 0.05095507891666918
+  },
+  {
+   "step": 2000,
+   "train_loss_bits": 0.04400305109313106,
+   "lr": 0.000722479612643756,
+   "elapsed_s": 44.0,
+   "tokens_per_s": 145600.3,
+   "corpus_bpc": 0.047151902945609586
+  },
+  {
+   "step": 2250,
+   "train_loss_bits": 0.046716319261094645,
+   "lr": 0.0006524711269053192,
+   "elapsed_s": 49.4,
+   "tokens_per_s": 145645.9,
+   "corpus_bpc": 0.04734074527071479
+  },
+  {
+   "step": 2500,
+   "train_loss_bits": 0.042959656535406676,
+   "lr": 0.0005797252955409574,
+   "elapsed_s": 54.9,
+   "tokens_per_s": 145747.1,
+   "corpus_bpc": 0.043064063440625
+  },
+  {
+   "step": 2750,
+   "train_loss_bits": 0.04240536720059153,
+   "lr": 0.0005061854023741567,
+   "elapsed_s": 60.4,
+   "tokens_per_s": 145771.5,
+   "corpus_bpc": 0.04339557343630766
+  },
+  {
+   "step": 3000,
+   "train_loss_bits": 0.039924576580931743,
+   "lr": 0.0004338159432680021,
+   "elapsed_s": 65.8,
+   "tokens_per_s": 145795.3,
+   "corpus_bpc": 0.04111189643236802
+  },
+  {
+   "step": 3250,
+   "train_loss_bits": 0.039885568765932924,
+   "lr": 0.00036455014788744914,
+   "elapsed_s": 71.3,
+   "tokens_per_s": 145819.2,
+   "corpus_bpc": 0.04052244470713818
+  },
+  {
+   "step": 3500,
+   "train_loss_bits": 0.03904697867309695,
+   "lr": 0.0003002383366860476,
+   "elapsed_s": 76.8,
+   "tokens_per_s": 145900.4,
+   "corpus_bpc": 0.04095490045719055
+  },
+  {
+   "step": 3750,
+   "train_loss_bits": 0.04103436987803377,
+   "lr": 0.00024259849267427143,
+   "elapsed_s": 82.2,
+   "tokens_per_s": 146040.6,
+   "corpus_bpc": 0.04071406831417531
+  },
+  {
+   "step": 4000,
+   "train_loss_bits": 0.040322969017197605,
+   "lr": 0.00019317036836241004,
+   "elapsed_s": 87.7,
+   "tokens_per_s": 146023.8,
+   "corpus_bpc": 0.04137589517590027
+  },
+  {
+   "step": 4250,
+   "train_loss_bits": 0.038879368143686546,
+   "lr": 0.00015327435383466527,
+   "elapsed_s": 93.1,
+   "tokens_per_s": 146048.4,
+   "corpus_bpc": 0.04165780698741145
+  },
+  {
+   "step": 4500,
+   "train_loss_bits": 0.03707201052745605,
+   "lr": 0.00012397620472540469,
+   "elapsed_s": 98.6,
+   "tokens_per_s": 146040.1,
+   "corpus_bpc": 0.04192843512468868
+  },
+  {
+   "step": 4750,
+   "train_loss_bits": 0.036389161473892026,
+   "lr": 0.00010605857233098868,
+   "elapsed_s": 104.3,
+   "tokens_per_s": 145720.2,
+   "corpus_bpc": 0.04305818647097755
+  },
+  {
+   "step": 5000,
+   "train_loss_bits": 0.0385903244266224,
+   "lr": 0.00010000009638285205,
+   "elapsed_s": 110.0,
+   "tokens_per_s": 145440.7,
+   "corpus_bpc": 0.04167222128333689
+  }
+ ],
+ "wall_s": 110.0,
+ "tokens_per_s": 145440.7,
+ "pass_final": true,
+ "pass_ever": true,
+ "peak_mem_gb": 0.53,
+ "probe_gate1_shape": {
+  "s_per_step": 0.0369,
+  "shape": [
+   32,
+   256
+  ]
+ },
+ "proj_gate1_h_per_seed": 0.006,
+ "proj_protocol_h_per_seed": 0.06
+}

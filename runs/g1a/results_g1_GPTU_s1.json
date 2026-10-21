@@ -1,0 +1,84 @@
+{
+ "arm": "GPTU",
+ "seed": 1,
+ "unigram_bpc": 4.454456218451907,
+ "params": 1898560,
+ "history": [
+  {
+   "step": 100,
+   "train_loss_bits": 3.3388780631566015,
+   "lr": 0.0009884665291533558,
+   "elapsed_s": 2.6,
+   "tokens_per_s": 316944.1,
+   "val_bpc": 3.299827682451692,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.334991455078125,
+   "val_p_argmax_curr": 0.000335693359375
+  },
+  {
+   "step": 200,
+   "train_loss_bits": 3.140976938878164,
+   "lr": 0.0008607077600253625,
+   "elapsed_s": 5.2,
+   "tokens_per_s": 316623.0,
+   "val_bpc": 3.0894413056512184,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.358978271484375,
+   "val_p_argmax_curr": 0.00439453125
+  },
+  {
+   "step": 300,
+   "train_loss_bits": 2.894121640962232,
+   "lr": 0.0006307185636718559,
+   "elapsed_s": 7.8,
+   "tokens_per_s": 316336.4,
+   "val_bpc": 2.8745881954425356,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.392242431640625,
+   "val_p_argmax_curr": 0.006317138671875
+  },
+  {
+   "step": 400,
+   "train_loss_bits": 2.589964991449178,
+   "lr": 0.00037417099217982685,
+   "elapsed_s": 10.4,
+   "tokens_per_s": 315315.7,
+   "val_bpc": 2.5810010837035575,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.45361328125,
+   "val_p_argmax_curr": 0.01214599609375
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 2.4246948234495447,
+   "lr": 0.0001754754504749751,
+   "elapsed_s": 13.0,
+   "tokens_per_s": 314350.9,
+   "val_bpc": 2.3720316719635424,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.498504638671875,
+   "val_p_argmax_curr": 0.0142822265625
+  },
+  {
+   "step": 600,
+   "train_loss_bits": 2.2084980127896707,
+   "lr": 0.0001000076154140151,
+   "elapsed_s": 15.7,
+   "tokens_per_s": 313973.7,
+   "val_bpc": 2.2559005589510814,
+   "val_n_chars": 32768,
+   "val_p_argmax_next": 0.52410888671875,
+   "val_p_argmax_curr": 0.01678466796875
+  }
+ ],
+ "death": null,
+ "steps_done": 600,
+ "wall_s": 15.7,
+ "final": {
+  "bpc": 2.281760366997461,
+  "n_chars": 499968,
+  "p_argmax_next": 0.5187191980286738,
+  "p_argmax_curr": 0.016043026753712237
+ },
+ "peak_mem_gb": 0.54
+}

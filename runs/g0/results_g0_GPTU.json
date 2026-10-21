@@ -1,0 +1,184 @@
+{
+ "arm": "GPTU",
+ "pass": true,
+ "pass_step": 250,
+ "params": 1898560,
+ "final_bpc": 0.039798451491584154,
+ "death": null,
+ "history": [
+  {
+   "step": 250,
+   "train_loss_bits": 0.31945171158922414,
+   "lr": 0.0009997686045977628,
+   "elapsed_s": 4.4,
+   "tokens_per_s": 180982.5,
+   "corpus_bpc": 0.26782079997370034
+  },
+  {
+   "step": 500,
+   "train_loss_bits": 0.08082474087225629,
+   "lr": 0.000991410740489197,
+   "elapsed_s": 7.5,
+   "tokens_per_s": 212947.3,
+   "corpus_bpc": 0.0674099973647161
+  },
+  {
+   "step": 750,
+   "train_loss_bits": 0.041187985319230215,
+   "lr": 0.0009712613230308674,
+   "elapsed_s": 11.5,
+   "tokens_per_s": 208522.4,
+   "corpus_bpc": 0.04134555904862543
+  },
+  {
+   "step": 1000,
+   "train_loss_bits": 0.0403067892118719,
+   "lr": 0.0009398586103781224,
+   "elapsed_s": 15.6,
+   "tokens_per_s": 205746.9,
+   "corpus_bpc": 0.040597754297613656
+  },
+  {
+   "step": 1250,
+   "train_loss_bits": 0.03998573253668699,
+   "lr": 0.000898041473740035,
+   "elapsed_s": 19.6,
+   "tokens_per_s": 203916.0,
+   "corpus_bpc": 0.040332049163717375
+  },
+  {
+   "step": 1500,
+   "train_loss_bits": 0.03979710787712429,
+   "lr": 0.0008469269883310777,
+   "elapsed_s": 23.7,
+   "tokens_per_s": 202847.3,
+   "corpus_bpc": 0.04018165033553785
+  },
+  {
+   "step": 1750,
+   "train_loss_bits": 0.03966858040512245,
+   "lr": 0.0007878805925657701,
+   "elapsed_s": 27.7,
+   "tokens_per_s": 202027.5,
+   "corpus_bpc": 0.040084351150812214
+  },
+  {
+   "step": 2000,
+   "train_loss_bits": 0.03957292849172461,
+   "lr": 0.000722479612643756,
+   "elapsed_s": 32.1,
+   "tokens_per_s": 199381.2,
+   "corpus_bpc": 0.04001658192468551
+  },
+  {
+   "step": 2250,
+   "train_loss_bits": 0.0394974630419718,
+   "lr": 0.0006524711269053192,
+   "elapsed_s": 36.1,
+   "tokens_per_s": 199265.3,
+   "corpus_bpc": 0.03996708048075514
+  },
+  {
+   "step": 2500,
+   "train_loss_bits": 0.03943486135705774,
+   "lr": 0.0005797252955409574,
+   "elapsed_s": 40.2,
+   "tokens_per_s": 199143.2,
+   "corpus_bpc": 0.0399294324035897
+  },
+  {
+   "step": 2750,
+   "train_loss_bits": 0.039381186646615024,
+   "lr": 0.0005061854023741567,
+   "elapsed_s": 44.1,
+   "tokens_per_s": 199532.5,
+   "corpus_bpc": 0.03990021147631654
+  },
+  {
+   "step": 3000,
+   "train_loss_bits": 0.03933481582437614,
+   "lr": 0.0004338159432680021,
+   "elapsed_s": 47.9,
+   "tokens_per_s": 200470.2,
+   "corpus_bpc": 0.03987720879676364
+  },
+  {
+   "step": 3250,
+   "train_loss_bits": 0.03929390007684431,
+   "lr": 0.00036455014788744914,
+   "elapsed_s": 51.5,
+   "tokens_per_s": 201958.6,
+   "corpus_bpc": 0.03985877440637428
+  },
+  {
+   "step": 3500,
+   "train_loss_bits": 0.039257509622813304,
+   "lr": 0.0003002383366860476,
+   "elapsed_s": 55.5,
+   "tokens_per_s": 201672.0,
+   "corpus_bpc": 0.03984400808346036
+  },
+  {
+   "step": 3750,
+   "train_loss_bits": 0.03922544829457199,
+   "lr": 0.00024259849267427143,
+   "elapsed_s": 59.6,
+   "tokens_per_s": 201428.3,
+   "corpus_bpc": 0.03983210365934595
+  },
+  {
+   "step": 4000,
+   "train_loss_bits": 0.039197697281517924,
+   "lr": 0.00019317036836241004,
+   "elapsed_s": 63.7,
+   "tokens_per_s": 201066.0,
+   "corpus_bpc": 0.039822561309451984
+  },
+  {
+   "step": 4250,
+   "train_loss_bits": 0.03917457636389256,
+   "lr": 0.00015327435383466527,
+   "elapsed_s": 67.7,
+   "tokens_per_s": 200830.8,
+   "corpus_bpc": 0.03981485433691019
+  },
+  {
+   "step": 4500,
+   "train_loss_bits": 0.03915666329591363,
+   "lr": 0.00012397620472540469,
+   "elapsed_s": 71.8,
+   "tokens_per_s": 200668.5,
+   "corpus_bpc": 0.0398085635340091
+  },
+  {
+   "step": 4750,
+   "train_loss_bits": 0.03914459495083511,
+   "lr": 0.00010605857233098868,
+   "elapsed_s": 75.8,
+   "tokens_per_s": 200471.8,
+   "corpus_bpc": 0.039803256256892634
+  },
+  {
+   "step": 5000,
+   "train_loss_bits": 0.039139029699742346,
+   "lr": 0.00010000009638285205,
+   "elapsed_s": 79.9,
+   "tokens_per_s": 200310.8,
+   "corpus_bpc": 0.039798451491584154
+  }
+ ],
+ "wall_s": 79.9,
+ "tokens_per_s": 200310.8,
+ "pass_final": true,
+ "pass_ever": true,
+ "peak_mem_gb": 0.24,
+ "probe_gate1_shape": {
+  "s_per_step": 0.0236,
+  "shape": [
+   32,
+   256
+  ]
+ },
+ "proj_gate1_h_per_seed": 0.004,
+ "proj_protocol_h_per_seed": 0.04
+}

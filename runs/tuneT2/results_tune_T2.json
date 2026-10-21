@@ -1,0 +1,65 @@
+{
+ "arm": "T2",
+ "grid": [
+  {
+   "arm": "T2",
+   "point": {
+    "LR_SPIKE": 0.001,
+    "SURROGATE_SLOPE": 5.0
+   },
+   "death": null,
+   "wall_s": 7465.0,
+   "val_bpc": 1.9077112773289484
+  },
+  {
+   "arm": "T2",
+   "point": {
+    "LR_SPIKE": 0.001,
+    "SURROGATE_SLOPE": 10.0
+   },
+   "death": null,
+   "wall_s": 7470.4,
+   "val_bpc": 2.0115866916626115
+  },
+  {
+   "arm": "T2",
+   "point": {
+    "LR_SPIKE": 0.002,
+    "SURROGATE_SLOPE": 5.0
+   },
+   "death": null,
+   "wall_s": 7465.3,
+   "val_bpc": 1.6509013656071003
+  },
+  {
+   "arm": "T2",
+   "point": {
+    "LR_SPIKE": 0.002,
+    "SURROGATE_SLOPE": 10.0
+   },
+   "death": null,
+   "wall_s": 7466.3,
+   "val_bpc": 1.7958421953745072
+  },
+  {
+   "arm": "T2",
+   "point": {
+    "LR_SPIKE": 0.004,
+    "SURROGATE_SLOPE": 5.0
+   },
+   "death": null,
+   "wall_s": 7470.3,
+   "val_bpc": 1.5661514539452865
+  },
+  {
+   "arm": "T2",
+   "point": {
+    "LR_SPIKE": 0.004,
+    "SURROGATE_SLOPE": 10.0
+   },
+   "death": null,
+   "wall_s": 7464.7,
+   "val_bpc": 1.6920070679768084
+  }
+ ]
+}
